@@ -11,7 +11,11 @@ Description:
 Complete tables in machine-readable form for this paper. 
 
 File Summary:
-ReadMe： 
-table1.csv: Stellar parameters of each sample. Sample-1: Kepler Flaring star (Yang & Liu 2019) with TESS light-curve (13 stars, including 6 stars for rigorous analysis, see Section 4.1); Sample-2: Solar-type TESS flaring stars from Tu et al. (2020) (84 stars); Sample-3: Different type TESS flaring stars from Gu ̈nther et al. (2020) and Yang & Liu (2019) (24 stars). 
+
+ReadMe.txt
+
+table1.csv: Stellar parameters of each sample. 
+
 table2.csv: The power-law parameters for fitting cumulative FFDs before and after correction for flaring stars in Sample-1 were obtained through TESS and Kepler missions. 
+
 table3.csv:  The power-law parameters for fitting cumulative FFDs before and after correction for solar-type stars (Sample-2) and different type stars (Sample-3).

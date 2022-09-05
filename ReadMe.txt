@@ -22,6 +22,13 @@ Tmag 	mag	TESS magnitude
 Kmag	mag	Kepler magnitude
 Teff 	K	Effective temperature
 Rs	Rsun	Stellar Radius
+GAIAID	 --- 	GAIA Catalog ID
+RUWE	--- 	Renormalised Unit Weight Error from GAIA Catalog 
+Gmag	mag	G-band mean magnitude 
+Teff_G	K	Effective temperature from GSP-Phot 
+logg_G	log(cm.s**-2)	Surface gravity from GSP-Phot
+[Fe/H]_G	dex	Iron abundance from GSP-Phot 
+Rs_G	solRad	Radius from GSP-Phot
 Prot	day	Rotation period
 Nf_previous	count	The number of flares in previous work
 Nf_TESS	count	The number of flares detected from TESS data in this work
@@ -31,7 +38,7 @@ Kepler_Quarter --- Kepler data used in this work
 Separation ---	The distance of the nearby star to the star
 --------------------------------------------------------------------------------
 Note on table1.csv:
-(1)For stars in Sample-1 and Sample-2, the stellar parameters are read through astroquery.mast.Catalogs (https: //astroquery.readthedocs.io) from TESS input catalog (TIC v8) (Paegert et al. 2022); For Kelper flaring stars in Sample-3, their stellar parameters are from Berger et al. (2020).
+(1)For stars in Sample-1 and Sample-2, the stellar parameters are read through astroquery.mast.Catalogs (https: //astroquery.readthedocs.io) from TESS input catalog (TIC v8) (Paegert et al. 2022); For Kelper flaring stars in Sample-3, their stellar parameters are from Berger et al. (2020); We cross match each star with GAIA Dr 3 and show the stellar parameters from the GAIA catalog.
 (2) Stellar rotation periods are taken from Yang & Liu (2019), partly Given by Reinhold et al. (2013) and McQuillan et al. (2014).
 (3) For Kepler flaring stars, “Nfprevious” is taken from Yang & Liu (2019); For TESS flaring stars, “Nfprevious” is taken from Gu ̈nther et al. (2020) and Tu et al. (2020).
 (4) TIC 164670606 (KIC 8935655) is also listed in Sample-3. 
@@ -67,8 +74,8 @@ beta_KICOCorr_err ---	The error of cumnlative beta fitted within the energy rang
 EngLow_Range15 	logarithm 	The energy lower limit for cumulative FFD fitting within energy range of detection probability P_det>= 15% from Kepler
 --------------------------------------------------------------------------------
 Note on table2.csv:
-(1) Because of the requirement of sufficient energy bins, we use the whole energy range to fit the cumulate FFDs obtained from the TESS data for Sample-1 stars, except for TIC 164670606 (KIC 8935655), which has enough energy bins to fit in different detection complete range.
-(2) For Sample-1 faint stars, especially considering their photometric light curves from TESS, we extend the flares with P_det ≥ 0.001 for correction. (see Section 3.4 ) 
+(1) When fitting the cumulative FFDs, we use the flare energy of each event calculated from the stellar parameters from GAIA catalog.
+(2) Because of the requirement of sufficient energy bins, we use the whole energy range to fit the cumulate FFDs obtained from the TESS data for Sample-1 stars. 
 
 
 Description of table3.csv 
@@ -91,5 +98,6 @@ Up15_* 	--- 	The cumulative FFD fitting within energy range of detection probabi
 Up65_* 	--- 	The cumulative FFD fitting within energy range of detection probability P_det>= 65%. 
 --------------------------------------------------------------------------------
 Note on table3.csv:
-(1)	The alpha of cumulative FFD in previous work can be obtained from Gu ̈nther et al. (2020)
+(1) When fitting the cumulative FFDs, we use the flare energy of each event calculated from the stellar parameters from GAIA catalog.
+(2)	The alpha of cumulative FFD in previous work can be obtained from Gu ̈nther et al. (2020)
 

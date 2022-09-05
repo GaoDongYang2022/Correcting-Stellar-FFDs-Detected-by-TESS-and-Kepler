@@ -41,7 +41,6 @@ Note on table1.csv:
 (1)For stars in Sample-1 and Sample-2, the stellar parameters are read through astroquery.mast.Catalogs (https: //astroquery.readthedocs.io) from TESS input catalog (TIC v8) (Paegert et al. 2022); For Kelper flaring stars in Sample-3, their stellar parameters are from Berger et al. (2020); We cross match each star with GAIA Dr 3 and show the stellar parameters from the GAIA catalog.
 (2) Stellar rotation periods are taken from Yang & Liu (2019), partly Given by Reinhold et al. (2013) and McQuillan et al. (2014).
 (3) For Kepler flaring stars, “Nfprevious” is taken from Yang & Liu (2019); For TESS flaring stars, “Nfprevious” is taken from Gu ̈nther et al. (2020) and Tu et al. (2020).
-(4) TIC 164670606 (KIC 8935655) is also listed in Sample-3. 
 
 
 Description of table2.csv:
